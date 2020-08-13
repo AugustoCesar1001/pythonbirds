@@ -15,3 +15,9 @@ if __name__ == '__main__':
     print(p2.idade)
     for filho in p2.filhos:
         print(filho.nome)
+
+    p.sobrenome='César'
+    print(f'Nome = {p.nome, p.sobrenome}')
+    del p2.filhos
+    print(p.__dict__)
+    print(p2.__dict__)
